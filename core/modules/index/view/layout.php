@@ -17,7 +17,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-xs-5">
-      <br><h1>PapelFast</h1>
+      <br><h1>PapelFast!</h1>
       </div>
       <div class="col-md-7 col-xs-5">
 <br><br>
