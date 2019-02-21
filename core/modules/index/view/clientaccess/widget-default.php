@@ -4,7 +4,7 @@
 		<div class="col-md-3"></div>
 		<div class="col-md-6">
 			<div class="panel panel-default">
-				<div class="panel-heading">REGISTRO DE CLIENTES</div>
+				<div class="panel-heading">Inicio de Seción</div>
 				<div class="panel-body">
 <form class="form-horizontal" role="form" method="post" action="index.php?action=clientaccess">
 
@@ -22,7 +22,7 @@
   </div>
   <div class="form-group">
     <div class="col-lg-offset-2 col-lg-10">
-      <button type="submit" class="btn btn-block btn-default">Registrarme</button>
+      <button type="submit" class="btn btn-block btn-default">Iniciar Seción</button>
     </div>
   </div>
 </form>
