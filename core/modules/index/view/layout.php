@@ -62,6 +62,7 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
       <li><a href="./"><i class="fa fa-home"></i> Inicio</a></li>
+      <li><a href="index.php?view=client">Perfil</a></li>
 <?php
 $cats = CategoryData::getPublics();
 ?>
