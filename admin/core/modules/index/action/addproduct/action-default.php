@@ -7,6 +7,7 @@ foreach ($_POST as $k => $v) {
 }
 $alphabeth ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWYZ1234567890_-";
 $code = "";
+$cantidad=$_POST["cantidad"];
 for($i=0;$i<11;$i++){
     $code .= $alphabeth[rand(0,strlen($alphabeth)-1)];
 }

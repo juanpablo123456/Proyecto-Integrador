@@ -87,6 +87,10 @@ $coin = ConfigurationData::getByPreffix("general_coin")->val;
     </div>
 
   </div>
+  <label for="inputEmail1" class="col-lg-2 control-label">Cantidad</label>
+    <div class="col-lg-2">
+      <input type="text" class="form-control" name="cantidad" placeholder="Cantidad">
+    </div><br><br>
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Unidad</label>
     <div class="col-lg-10">

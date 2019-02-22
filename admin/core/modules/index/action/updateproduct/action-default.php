@@ -7,6 +7,7 @@ foreach ($_POST as $k => $v) {
 }
 
 ////////////////////////////////////// / / / / / / / / / / / / / / / / / / / / / / / / /
+$cantidad=$_POST["cantidad"];
 $handle = new Upload($_FILES['image']);
 if ($handle->uploaded) {
 	$url="storage/products/";

@@ -16,8 +16,8 @@ class ProductData {
 	public function getUnit(){ return UnitData::getById($this->unit_id);}
 
 	public function add(){
-		$sql = "insert into ".self::$tablename." (short_name,code,name,description,image,price,link,category_id,unit_id,is_public,in_existence,is_featured,created_at) ";
-		$sql .= "value (\"$this->short_name\",\"$this->code\",\"$this->name\",\"$this->description\",\"$this->image\",\"$this->price\",\"$this->link\",$this->category_id,$this->unit_id,$this->is_public,$this->in_existence,$this->is_featured,$this->created_at)";
+		$sql = "insert into ".self::$tablename." (short_name,code,name,description,image,price,link,category_id,unit_id,is_public,in_existence,cantidad,is_featured,created_at) ";
+		$sql .= "value (\"$this->short_name\",\"$this->code\",\"$this->name\",\"$this->description\",\"$this->image\",\"$this->price\",\"$this->link\",$this->category_id,$this->unit_id,$this->is_public,$this->in_existence,$this->cantidad,$this->is_featured,$this->created_at)";
 		Executor::doit($sql);
 	}
 
@@ -32,7 +32,7 @@ class ProductData {
 
 // partiendo de que ya tenemos creado un objecto ProductData previamente utilizamos el contexto
 	public function update(){
-		$sql = "update ".self::$tablename." set code=\"$this->code\",name=\"$this->name\",description=\"$this->description\",link=\"$this->link\",price=\"$this->price\",in_existence=\"$this->in_existence\",is_public=\"$this->is_public\",is_featured=\"$this->is_featured\",unit_id=\"$this->unit_id\",category_id=\"$this->category_id\" where id=$this->id";
+		$sql = "update ".self::$tablename." set code=\"$this->code\",name=\"$this->name\",description=\"$this->description\",link=\"$this->link\",price=\"$this->price\",in_existence=\"$this->in_existence\",is_public=\"$this->is_public\",cantidad=\"$this->cantidad\",is_featured=\"$this->is_featured\",unit_id=\"$this->unit_id\",category_id=\"$this->category_id\" where id=$this->id";
 		Executor::doit($sql);
 	}
 

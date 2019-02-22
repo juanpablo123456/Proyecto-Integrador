@@ -61,23 +61,29 @@ $coin = ConfigurationData::getByPreffix("general_coin")->val;
         </label>
       </div>
     </div>
-    <div class="col-lg-2">
+	<div class="col-lg-2">
       <div class="checkbox">
         <label>
           <input type="checkbox" name="in_existence"> En Existencia
         </label>
       </div>
     </div>
-    <div class="col-lg-3">
+	<div class="col-lg-3">
       <div class="checkbox">
         <label>
           <input type="checkbox" name="is_featured"> Producto Destacado
         </label>
       </div>
     </div>
+	
+    
+    
 
-  </div>
-
+  </div><br>
+  <label for="inputEmail1" class="col-lg-2 control-label">Cantidad</label>
+    <div class="col-lg-2">
+      <input type="text" class="form-control" name="cantidad" placeholder="Cantidad">
+    </div><br><br>
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Unidad</label>
     <div class="col-lg-10">

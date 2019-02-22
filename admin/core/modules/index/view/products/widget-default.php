@@ -28,7 +28,7 @@ $categories = ProductData::getAll();
   <th>Visible</th>
   <th>Destacado</th>
   <th>Existencia</th>
-  <th></th>
+  <th>Cantidad</th>
 </thead>
 <?php foreach($categories as $cat):?>
                         <tr>
@@ -36,7 +36,8 @@ $categories = ProductData::getAll();
                         <td style="width:90px;"><center><?php if($cat->is_public):?><i class="fa fa-check"></i><?php else: ?><i class="fa fa-remove"></i><?php endif; ?></center> </td>
                         <td style="width:90px;"><center><?php if($cat->is_featured):?><i class="fa fa-check"></i><?php else: ?><i class="fa fa-remove"></i><?php endif; ?></center> </td>
                         <td style="width:90px;"><center><?php if($cat->in_existence):?><i class="fa fa-check"></i><?php else: ?><i class="fa fa-remove"></i><?php endif; ?></center> </td>
-                        <td style="width:105px;">
+                        <td style="width:90px;"><?php echo $cat->cantidad; ?></td>
+						<td style="width:105px;">
                         <a href="../index.php?view=producto&product_id=<?php echo $cat->id; ?>" target="_blank" class="btn btn-default btn-xs"><i class="fa fa-link"></i></a> 
                         <a href="index.php?view=editproduct&product_id=<?php echo $cat->id; ?>" class="btn btn-warning btn-xs"><i class="fa fa-edit"></i></a> 
                         <a href="index.php?action=delproduct&product_id=<?php echo $cat->id; ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i></a> 
