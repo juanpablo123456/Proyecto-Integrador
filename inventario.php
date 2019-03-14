@@ -73,7 +73,7 @@ class PDF extends FPDF
 	}
 }
 
- $pdf=new PDF();
+$pdf=new PDF();
 //Títulos de las columnas
 $header=array('Nombre','Cantidad','Existencia','Diferencia');
 $pdf->AliasNbPages();
