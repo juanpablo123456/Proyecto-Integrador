@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>PapelFast</title>
+  <title>PapelFast||Tienda</title>
 
   <link rel="stylesheet" type="text/css" href="res/lib/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="res/lib/font-awesome/css/font-awesome.min.css">
@@ -17,7 +17,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-xs-5">
-      <br><h1>PapelFast!</h1>
+      <br><h1>PapelFast</h1>
       </div>
       <div class="col-md-7 col-xs-5">
 <br><br>

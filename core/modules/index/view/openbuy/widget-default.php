@@ -19,6 +19,7 @@ $products = BuyProductData::getAllByBuyId($buy->id);
 <h3>Bienvenido, <?php echo $client->name." ".$client->lastname; ?></h3>
 	<a href="./index.php?view=client" class="btn btn-default"><i class="fa fa-chevron-left"></i> Regresar</a>
 	<a href="./invoice.php?code=<?php echo $buy->code;?>" class="btn btn-default"><i class="fa fa-file-o"></i> Imprimir</a>
+	<a href="../QR.php?code=<?php echo $buy->code;?>" class="btn btn-default"><i class="fa fa-file-o"></i> QR</a>
 <br></div>
 
 

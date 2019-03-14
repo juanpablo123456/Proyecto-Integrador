@@ -22,7 +22,7 @@ function LoadData($file)
 }
 
 function Header(){
-$title = ConfigurationData::getByPreffix("general_main_title")->val;
+$title = "PapelFast";
     $service = BuyData::getByCode($_GET["code"]);
         $this->SetFont('Arial','B',15);
         $this->setX(20);
