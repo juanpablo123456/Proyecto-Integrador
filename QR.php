@@ -26,7 +26,7 @@
 
         //Parametros de Condiguración
 	
-	$tamaño = 20; //Tamaño de Pixel
+	$tamaño = 15; //Tamaño de Pixel
 	$level = 'L'; //Precisión Baja
 	$framSize = 1; //Tamaño en blanco
 	$contenido = " Nombre: ".$client->getFullname()."\n"; //Texto
