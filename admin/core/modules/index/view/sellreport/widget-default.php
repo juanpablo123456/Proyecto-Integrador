@@ -44,7 +44,7 @@ $statuses = StatusData::getAll();
             <input type="date" name="finish_at" class="form-control">
             </div>
             <div class="col-md-2">
-            <input type="submit" value="Generar" class="btn btn-primary">
+            <input type="submit" value="Generar"  class="btn btn-primary"> 
             </div>
 
             </div>

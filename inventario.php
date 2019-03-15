@@ -45,7 +45,7 @@ class PDF extends FPDF
 		//Colores, ancho de línea y fuente en negrita
 		$this->SetFillColor(0, 191, 255);
 		$this->SetTextColor(0);
-		$this->SetDrawColor(128,0,0);
+		$this->SetDrawColor(0,0,0);
 		$this->SetLineWidth(.3);
 		$this->SetFont('','B');
 		//Cabecera
@@ -57,6 +57,7 @@ class PDF extends FPDF
 		//Restauración de colores y fuentes
 			$this->SetFillColor(224,235,255);
 			$this->SetTextColor(0);
+			
 			$this->SetFont('');
 		//Datos
 			$fill=false;
