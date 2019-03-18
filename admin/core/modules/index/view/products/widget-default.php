@@ -4,6 +4,7 @@
             <div class="col-md-12">
                   <a  href="index.php?view=newproduct" class="pull-right btn-sm btn btn-default"><i class="fa fa-plus"></i> Agregar Producto</a>
 				  <a  href="../inventario.php?code" class="pull-right btn-sm btn btn-default"><i class="fa fa-file-pdf-o"></i> Inventario</a>
+          <a  href="../creator_QR.php" class="pull-right btn-sm btn btn-default"><i class="fa fa-file-pdf-o"></i> CodigoQR</a>
   <!-- Button trigger modal -->
 
 

@@ -41,6 +41,12 @@
       <input type="text" name="address" class="form-control" id="inputEmail1" placeholder="Direccion">
     </div>
   </div>
+  <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Tipo de Membresia</label>
+    <div class="col-lg-10">
+      <input type="text" name="address" class="form-control" id="inputEmail1" placeholder="Tipo de Membresia">
+    </div>
+  </div>
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Correo Electronico</label>

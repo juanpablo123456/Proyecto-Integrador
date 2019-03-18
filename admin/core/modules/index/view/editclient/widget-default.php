@@ -39,6 +39,12 @@ $client = ClientData::getById($_GET["client_id"]);
     </div>
   </div>
   <div class="form-group">
+    <label for="inputEmail1" class="col-lg-2 control-label">Tipo de Membresia</label>
+    <div class="col-lg-10">
+      <input type="text" name="" class="form-control" id="inputEmail1" placeholder="Membresia">
+    </div>
+  </div>
+  <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Direccion</label>
     <div class="col-lg-10">
       <input type="text" name="address" value="<?php echo $client->address; ?>" class="form-control" id="inputEmail1" placeholder="Direccion">
@@ -49,7 +55,7 @@ $client = ClientData::getById($_GET["client_id"]);
     <label for="inputEmail1" class="col-lg-2 control-label">Correo Electronico</label>
     <div class="col-lg-10">
       <input type="email" name="email" required value="<?php echo $client->email; ?>" class="form-control" id="inputEmail1" placeholder="Correo Electronico">
-    </div>
+  </div>
   </div>
   <div class="form-group">
     <label for="inputPassword1" class="col-lg-2 control-label">Contrase&ntilde;a</label>
