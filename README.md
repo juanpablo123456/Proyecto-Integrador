@@ -1,5 +1,5 @@
-# Katana
-Sistema de Tienda en Linea
+# PAPElFAST
+Sistema POS con codigoQR
 
 Características
 
@@ -16,6 +16,7 @@ Características
 - Gestion de categorias
 - Organización de productos por categorías
 - Controla los usuarios que tendran acceso al sistema de administración
+- Lectro de Código QR
+- Creador de Código QR
 - Mucho mas
 
-Link: http://evilnapsis.com/2015/10/16/katana-lite-sistema-de-tienda-en-linea/
