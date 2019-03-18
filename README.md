@@ -1,4 +1,4 @@
-# PAPElFAST
+# PAPELFAST
 Sistema POS con codigoQR
 
 Características
