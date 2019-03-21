@@ -2,14 +2,11 @@
 $buys = array();
 if(isset($_GET["start_at"]) && isset($_GET["finish_at"])){
 $buys =  BuyData::getByRange($_GET["start_at"],$_GET["finish_at"]);
-
 }else{
 $buys =  BuyData::getAll();
-
 }
 $paymethods = PaymethodData::getAll();
 $statuses = StatusData::getAll();
-
 ?>
         <!-- Main Content -->
 
@@ -53,26 +50,27 @@ $statuses = StatusData::getAll();
 <?php if(isset($_GET["start_at"]) && isset($_GET["finish_at"]) && $_GET["start_at"]!=""&&$_GET["finish_at"]!=""):
 $start_at = strtotime($_GET["start_at"]);
 $finish_at = strtotime($_GET["finish_at"]);
-
 ?>
 <div class="box box-primary">
 <div id="graph" class="animate" data-animate="fadeInUp" ></div>
 </div>
 <script>
-
 <?php 
 echo "var c=0;";
 echo "var dates=Array();";
 echo "var data=Array();";
 echo "var total=Array();";
 for($i=$start_at;$i<=$finish_at;$i+=(60*60*24)){
+
   $operations = BuyData::getAllByDate(date("Y-m-d",$i));
   $total=0;
   foreach ($operations as $buy) {
+	
     $opxs = BuyProductData::getAllByBuyId($buy->id);
     foreach($opxs as $op){
       $product = $op->getProduct();
-      $total += ($op->q*$product->price);
+	  if($buy->status_id==2){
+      $total += ($op->q*$product->price);}
     }
   }
 //  echo $operations[0]->t;
@@ -90,14 +88,13 @@ Morris.Area({
   data: total,
   xkey: 'x',
   ykeys: ['y',],
-  labels: ['Y']
+  labels: ['Ganancias:']
 }).on('click', function(i, row){
   console.log(i, row);
 });
 </script>
 <?php endif;?>
 <br>
-
           <div class="row">
             <div class="col-lg-12">
               <div class="panel panel-default">
@@ -105,7 +102,6 @@ Morris.Area({
                   <i class="fa fa-tasks"></i> Reporte de Ventas
                 </div>
                 <div class="widget-body medium no-padding">
-
                   <div class="table-responsive">
 <?php if(count($buys)>0):?>
                     <table class="table table-bordered">
@@ -135,7 +131,6 @@ $discount=0;
         echo number_format($discount,2,".",",");
         }else{
         echo number_format($discount,2,".",",");
-
         }
       ?>
     </td>
@@ -155,5 +150,4 @@ $discount=0;
                 </div>
               </div>
             </div>
-
           </div>
