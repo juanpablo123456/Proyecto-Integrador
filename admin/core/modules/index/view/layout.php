@@ -53,7 +53,7 @@ if(isset($_SESSION["admin_id"]) && $_SESSION["admin_id"]!=""):
           <li><a href="./"><i class="fa fa-home"></i> Inicio</a></li>
           <li><a href="index.php?view=products"><i class="fa fa-glass"></i> Productos</a></li>
           <li><a href="index.php?view=sells"><i class="fa fa-shopping-cart"></i> Ventas</a></li>
-		  <li><a href="index.php?view=charge"><i class="fa fa-usd"></i> Cobrar </a></li>
+		  
           <li><a href="index.php?view=sellreport"><i class="fa fa-area-chart"></i> Reportes</a></li>
           <li><a href="index.php?view=clients"><i class="fa fa-male"></i> Clientes</a></li>
           <li><a href="index.php?view=categories"><i class="fa fa-th-list"></i> Categorias</a></li>

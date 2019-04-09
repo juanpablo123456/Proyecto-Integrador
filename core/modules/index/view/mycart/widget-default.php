@@ -56,6 +56,7 @@ foreach($_SESSION["cart"] as $s):?>
 $total += $s["q"]*$p->price;
  endforeach; ?>
 </tr>
+
 </table>
 
 

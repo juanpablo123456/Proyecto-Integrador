@@ -9,12 +9,15 @@ $coin = ConfigurationData::getByPreffix("general_coin")->val;
           <div class="row">
           <div class="col-md-12">
           <h1>Ventas</h1>
+		  <a  href="../readqr.php" class="pull-right btn-sm btn btn-default"><i class="fa fa-qrcode"></i> Lector QR</a>
           </div>
           </div>
 
           <div class="row">
             <div class="col-lg-12">
+			
               <div class="panel panel-default">
+			  
                 <div class="panel-heading">
                   <i class="fa fa-tasks"></i> Ventas
                 </div>
@@ -60,13 +63,14 @@ $discount=0;
                         <td><?php echo $b->created_at; ?></td>
                         <th>
                           <?php if(($b->status_id!=2) and ($b->status_id!=3)):?>
-                            <a href="./?action=changestatus&id=<?php echo $b->id;?>&status=2" class="btn btn-info btn-xs"><i class="fa fa-usd"></i></a>
+                            <a href="./?action=changestatus&id=<?php echo $b->id;?>&status=2"  class="btn btn-info btn-xs"><i class="fa fa-usd"></i></a>
                             <a href="./?action=changestatus&id=<?php echo $b->id;?>&status=4" class="btn btn-success btn-xs"><i class="fa fa-truck"></i></a>
                             
                             <a href="./?action=changestatus&id=<?php echo $b->id;?>&status=3" class="btn btn-danger btn-xs"><i class="fa fa-remove"></i></a>
                           
 						  <?php else:?>
                             <i class="fa fa-check"></i>
+                            
                           <?php endif;?>
                         </th>
                         </tr>

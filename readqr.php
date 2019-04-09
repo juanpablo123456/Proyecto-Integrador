@@ -188,7 +188,7 @@
 
 <body>
   <div class="row">
-          <a href="index.php" style="float: right;">QR</a> 
+          <a href="/PI-Repuesto-master/Proyecto-Integrador/admin/index.php?view=sells" style="float: right;">QR</a> 
       <div id="test1" class="col s12">
         <div class="container">
           <div class="row">
@@ -210,6 +210,7 @@
               <div style="text-align:  right; margin-right: 10px;">
                 <a class="waves-effect waves-light btn blue" onclick="load();"><i class="material-icons left">play_circle_outline</i>Comenzar</a> 
                 <a class="waves-effect waves-light btn red" onclick="stop();"><i class="material-icons left">not_interested</i>Detener</a> 
+                <a href="/PI-Repuesto-master/Proyecto-Integrador/admin/index.php?view=sells" class="waves-effect waves-light btn green">Volver</a> 
               </div>
               <div class="card-panel grey lighten-5 z-depth-1">
            

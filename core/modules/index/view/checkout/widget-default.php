@@ -38,6 +38,8 @@ foreach($_SESSION["cart"] as $s):?>
 <td><?php echo $p->name; ?></td>
 <td style="width:100px;">
 <?php echo $s["q"]; ?>
+
+
 </td>
 <td><h4><?php echo $coin_symbol; ?> <?php echo $p->price; ?></h4> </td>
 <td><h4><?php echo $coin_symbol; ?> <?php echo $p->price*$s["q"]; ?></h4> </td>
@@ -85,7 +87,8 @@ $coupon = CouponData::getById($_SESSION["coupon"]);
 			<?php if(isset($_SESSION["client_id"])):?>
 <form action="index.php?action=buy" method="post">
 <input type="hidden" class="form-control" required name="paymethod_id" value="<?php echo $_POST["paymethod_id"];?>">
-<button class="btn btn-primary btn-block">Proceder a Comprar</button>
+<button class="btn btn-primary btn-block" type="submit" name="submit">Proceder a Comprar</button>
+
 </form>
 <?php endif; ?>
 <br>

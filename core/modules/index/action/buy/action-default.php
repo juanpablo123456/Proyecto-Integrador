@@ -21,9 +21,11 @@ $b = $buy->add();
 
 foreach ($_SESSION["cart"] as $c) {
 	$p = new BuyProductData();
+	
 	$p->buy_id = $b[1];
 	$p->product_id = $c["product_id"];
 	$p->q = $c["q"];
+	
 	$p->add();
 }
 
